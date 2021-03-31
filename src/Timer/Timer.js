@@ -1,45 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { CountdownCircle } from './components/CountdownCircle';
+import Box from '@material-ui/core/Box'
 
 const Timer = () => {
-    const [seconds, setSeconds] = useState(0);
-    const [isActive, setIsActive] = useState(false);
-
-    function toggle() {
-        setIsActive(!isActive);
-    }
-
-    function reset() {
-        setSeconds(0);
-        setIsActive(false);
-    }
-
-    useEffect(() => {
-        let interval = null;
-        if (isActive) {
-            interval = setInterval(() => {
-                setSeconds( seconds => seconds + 1);
-            }, 1000);
-        } else if (!isActive && seconds !== 0) {
-            clearInterval(interval);
-        }
-        return () => clearInterval(interval);
-    }, [isActive, seconds]);
-
     return (
-        <div className="timer">
-            <div className="time">
-                {seconds}s
-            </div>
-            <div>
-                <button className={`button button-primary buttom-primary-${isActive ? 'active' : 'inactive'}`}
-                        onClick={toggle}>
-                    {isActive ?  'Pause' : 'Start'}
-                </button>
-                <button className="button" onClick={reset}>
-                    Reset
-                </button>
-            </div>
-        </div>
+        <Box width="250px" m="auto">
+            <CountdownCircle />
+            <Box display="flex" justifyContent="center" alignItems="center" my={3}>
+                { 
+                    // reset button 
+                }
+                <Box display="flex" flexDirection="column" alignItems="center" mx={3}>
+                { 
+                    // toggle button
+                }
+                </Box>
+                { 
+                    // skip button 
+                }
+            </Box>
+            <Box display="flex" justifyContent="center">
+                {
+                    // rounds counter
+                }
+            </Box>
+        </Box>
     );
 }
 

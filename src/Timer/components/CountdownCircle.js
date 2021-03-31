@@ -96,4 +96,4 @@ const TimerType = () => {
     )
 }
 
-export default { CountdownCircle, Time, TimerType };
+export { CountdownCircle, Time, TimerType };
