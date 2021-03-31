@@ -17,7 +17,7 @@ export const setProgress = (progress) => ({
     progress,
 })
 
-export const setTimeLeft = (timeLeft) => ({
+export const setTimerTimeLeft = (timeLeft) => ({
     type: CountdownAction.SET_TIME_LEFT,
     timeLeft,
 })

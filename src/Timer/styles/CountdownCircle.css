@@ -1,0 +1,81 @@
+/* Circle container */
+.circle-container {
+    position: relative;
+    margin: 20px auto 0;
+}
+
+.circle-container-sm {
+    height: 200px;
+    width: 200px;
+}
+
+.circle-container-md {
+    height: 250px;
+    width: 250px;
+}
+
+.circle-container-lg {
+    height: 300px;
+    width: 300px;
+}
+
+.circle-container-xl {
+    height: 350px;
+    width: 350px;
+}
+
+/* Circle */
+.circle {
+    position: absolute;
+    top: 0;
+}
+
+/* Time */
+.time {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    white-space: pre;
+}
+
+.time-sm {
+    font-size: 3rem;
+}
+
+.time-md {
+    font-size: 3.6rem;
+}
+
+.time-lg {
+    font-size: 4.2rem;
+}
+
+.time-xl {
+    font-size: 5rem;
+}
+
+/* Typography */
+.timer-type-container {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.timer-type-container-md {
+    top: 70%;
+    transform: translate(-50%, -70%);
+}
+
+.timer-type-container-lg {
+    top: 72%;
+}
+
+.timer-type {
+    letter-spacing: 1px;
+}
+
+.timer-type-lg {
+    font-size: 1rem;
+}
